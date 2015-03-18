@@ -1,0 +1,11 @@
+﻿/*add by yzh
+ *this css file  is used for    navi   part     
+ */ 
+.logo
+        {
+
+        }
+        .logo:hover
+        {
+            text-decoration:none;
+        }

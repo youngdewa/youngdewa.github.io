@@ -1,0 +1,89 @@
+﻿/*add by yzh
+ *this css file  is used for    footer   part    
+ */
+        ::selection
+        {
+            color: white;
+            background-color: #32B288;
+        }
+
+        ::-moz-selection
+        {
+            color: white;
+            background-color: #32B288;
+        }
+        /* *for    footer    css  */
+        footer
+        {
+            position: relative;
+            margin: 80px 0 0;
+            min-width: 768px;
+            height: 180px;
+            background: #1B1B1B;
+        }
+
+            footer ul
+            {
+                position: relative;
+                top: 60px;
+                width: 540px;
+                height: 28px;
+                margin: 0 auto;
+                text-align: center;
+                background: url(http://static2.ryanfait.org/images/brackets-o.png) 51% 0 no-repeat;
+            }
+
+            footer li
+            {
+                font: 100 2em/28px 'Lato',helvetica,sans-serif;
+                display: inline;
+            }
+
+                footer li.middle
+                {
+                    padding: 0 55px;
+                }
+
+                footer li a
+                {
+                    color: #eee;
+                    text-decoration: none;
+                }
+
+                    footer li a:hover
+                    {
+                        color: gray;
+                    }
+
+            footer p a
+            {
+                margin: 0 0 0 10px;
+                color: #eee;
+                text-decoration: none;
+                border-bottom: 1px solid #eee;
+            }
+
+                footer p a:hover
+                {
+                    margin: 0 0 0 10px;
+                    color: lightgray;
+                    text-decoration: none;
+                    border-bottom: 1px solid #eee;
+                }
+
+            footer a:hover
+            {
+                text-decoration: none;
+            }
+
+            footer p
+            {
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                width: 500px;
+                margin: 0 0 0 -250px;
+                color: #eee;
+                font: 1em/1.4em arial,sans-serif;
+                text-align: center;
+            }
