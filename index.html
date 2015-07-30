@@ -296,7 +296,7 @@
                 <li><a href="aboutme.html" accesskey="0" target="_blank">About Me</a></li>
                 <li class="middle"><a href="sitemap.html" accesskey="3" target="_blank">&nbsp;&nbsp;&nbsp;Site Map</a></li>
                 <li><a href="contact.html" target="_blank">Contact me </a><a href="javascript:void(0);" id="aerweima" style="position: relative"><i style="background-color: white" class="icon-qrcode"></i>
-                    <img src="img/erweima.png" class="img-responsive" id="mypic2" style="position: absolute; right: 0px; bottom: 50px; min-height: 200px; min-width: 200px;" />
+                    <img src="img/erweima.png" class="img-responsive" id="mypic2" onclick="hideme();" style="position: absolute; right: 0px; bottom: 50px; min-height: 200px; min-width: 200px; width:200px; height:200px; display:block" />
                 </a>
                 </li>
 
@@ -310,16 +310,14 @@
     <script>
         function hideerweima() {
             $('#erweima').hide('slow');
-        }
+        }   
         $(function () {
             var datetemp = new Date();
             var t = "<span class='icon-time'></span>" + datetemp.getFullYear() + "-" + datetemp.getMonth() + "-" + datetemp.getDay();
             $("#timenow").html(t);
-            //
             $("#erweima").hide();
             $("#mypic2").hide();
-            $("#aerweima").click(function () {
-                //$("#erweima").css("display") == "block" ? $("#erweima").hide("slow") : $("#erweima").show("slow");
+            $("#aerweima").click(function () {                
                 $("#mypic2").css("display") == "block" ? $("#mypic2").hide() : $("#mypic2").show();
             });
         })
